@@ -30,6 +30,7 @@
   - [Result Output](#result-output)
   - [Comparing Results Across Different Systems](#comparing-results-across-different-systems)
 - [Software Updates](#software-updates)
+- [Version History](#version-history)
 - [Uninstalling SPECviewperf](#uninstalling-specviewperf)
 - [Benchmark Compliance](#benchmark-compliance)
   - [Run Rules](#run-rules)
@@ -56,6 +57,7 @@ The SPECviewperf® 15 benchmark, developed by the SPEC® Graphics & Workstation 
 - *enscape-01*: built on Chaos's Enscape 4.0 using Vulkan with raytracing
 - *maya-07*: created with Autodesk Maya 2025 using OpenGL
 - *medical-04*: exploring datasets from a beating heart, brain, and alligator using the Tuvok library and OpenGL
+- *snx-05*: created from Siemens NX 2406 using OpenGL
 - *solidworks-08*: derived from Dassault Systèmes' Solidworks 2024 using OpenGL
 - *unreal_engine-01*: built on Unreal Engine 5.4.2 using DirectX 12 with raytracing
 
@@ -423,6 +425,15 @@ Note: 4K and Full HD runs of any workload cannot be compared directly. Official 
 
 An internet connection is required for any updates.
 
+## Version History
+
+This section documents the release history and changes across different versions of SPECviewperf 15.
+
+| Version | Release Date | Updates | Notes |
+|---------|--------------|---------|-------|
+| 15.0.1  | Dec 11, 2025 | • Adds new workload: snx-05<br>• Minor bug fixes | • Results from version 15.0.1 are still comparable to version 15.0.0. Previous workloads have not been modified.<br>• Users running the full benchmark suite should update to this version to include the new workload in their results. |
+| 15.0.0  | May 1, 2025  | • Official release of SPECviewperf 15.0.0 with 10 workloads: 3dsmax-08, blender-01, catia-07, creo-04, energy-04, enscape-01, maya-07, medical-04, solidworks-08, unreal_engine-01<br>• Enhanced usability with a redesigned graphical user interface (GUI) and streamlined installation and configuration processes | Initial release |
+
 ## Uninstalling SPECviewperf
 
 - Individual workloads may be uninstalled from the [benchmark configuration](#benchmark-configuration) window.
@@ -497,11 +508,16 @@ Windows 10 may run but is not officially supported. The following issues are kno
 
 **Workload Issues**
 
+- *3dsmax-08*
+  - The Minerva subtests (06_MinervaShadedEdges, 09_MinervaShaded & 10_MinervaShadedHQ) may show an incorrect right edge in FullHD. Users running on Intel or NVIDIA hardware may see slight differences in the right edge of the rendered frames.
 - *catia-07*
   - The wings in Subtest 04_ThreeLoftJetsWhite look corrupted. This is not a bug in the test, but an artifact in the model source.
   - In 3DEXPERIENCE, the SSAO algorithm does not handle buffer rescaling, which has led to some issues with offscreen 4K rendering appearing in 2K traces. In those tests, the frames were post-processed to correct this.
   - In 3DEXPERIENCE tests, some minor run-to-run variance may occur resulting in non-deterministic screen captures.
+- *creo-04*
+  - Subtest 07_WorldCarShadedEdges may show flickering effect coming from z-fighting at the bottom of the car.
 - *maya-07*
+  - Subtests 04_ApolloShaded, 05_ApolloShadedTextured, and 06_ApolloWireframeShadedTextured utilize 8x MSAA, although this antialiasing setting is not documented in the workload description.
   - Subtest 07_ToyStoreWireframeShaded has a z-bleeding visual artifact (seen in textures of the building) that causes a flickering effect. The source of the issue is in the model being used and this is how Maya application renders it.
 - *medical-04*
   - The 'BeatingHeart' tests may produce non-deterministic screen grabs.
@@ -529,7 +545,7 @@ _The SPECviewperf benchmark is developed by the [SPEC](https://www.spec.org/) Gr
 ---
 **How many workloads and tests are included?**
 
-_SPECviewperf 15.0 is released with 10 official workloads with a total of 85 subtests. Inspect an [official result](https://gwpg.spec.org/SPECviewperf-results/) for a full list of tests in the benchmark._
+_SPECviewperf 15.0.1 is released with 11 official workloads with a total of 93 subtests. Inspect an [official result](https://gwpg.spec.org/SPECviewperf-results/) for a full list of tests in the benchmark._
 
 ---
 
@@ -776,6 +792,10 @@ The Maya models and animations are provided courtesy of *Autodesk*
 - Stag beetle: *Georg Glaeser, Vienna University of Applied Arts, Austria; scanned by Johannes Kastner, Wels College of Engineering, Austria, and Eduard Gröller, Vienna University of Technology, Austria*
 - Human head and torso: Provided by a *member of the SPECgpc subcommittee*
 - Alligator head: *William Ruger Porter of Ohio University, Jayc C. Sedlmayr of Louisiana State University, and Lawrence M. Witmer of Ohio University via Dryad Dataset (licensed under CC0 1.0 Universal Public Domain Dedication)*
+
+**NX**
+
+- All models are produced by Siemens and distributed within their technical marketing catalog.
 
 **Solidworks**
 
