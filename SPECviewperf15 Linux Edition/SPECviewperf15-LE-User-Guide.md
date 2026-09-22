@@ -69,7 +69,7 @@ The SPECviewperf® 15 Linux Edition benchmark, developed by the SPEC® Graphics 
 - *snx-05*: created from Siemens NX 2406 using OpenGL
 - *solidworks-08*: derived from Dassault Systèmes' SolidWorks 2024 using OpenGL
 
-For more information, see [benchmark page](https://gwpg.spec.org/benchmarks/benchmark/specviewperf-15-0-1-linux-edition).
+For more information, see [benchmark page](https://gwpg.spec.org/benchmarks/benchmark/specviewperf-15-linux-edition).
 
 The Linux Edition includes the OpenGL-based workloads listed above for both **x86_64** and **aarch64** Linux systems. The Windows Edition workloads *3dsmax-08*, *enscape-01*, and *unreal_engine-01* are not included in the Linux Edition.
 
@@ -167,7 +167,7 @@ Some workloads test features that require special hardware and driver support. I
 ## Installation Guide
 
 ### Downloading SPECviewperf
-The SPECviewperf 15 Linux Edition benchmark can be obtained from the `Download` tab of the [SPECviewperf 15.0.1 Linux Edition benchmark page](https://gwpg.spec.org/benchmarks/benchmark/specviewperf-15-0-1-linux-edition). Complete the form on that tab for a free download or a paid license, as applicable. After you submit the form, you are redirected to a page where the installer and workload packages are hosted. Separate downloads are provided for **x86_64** and **aarch64**; choose the package that matches your system’s CPU architecture and Linux distribution.
+The SPECviewperf 15 Linux Edition benchmark can be obtained from the `Download` tab of the [SPECviewperf 15.0.1 Linux Edition benchmark page](https://gwpg.spec.org/benchmarks/benchmark/specviewperf-15-linux-edition). Complete the form on that tab for a free download or a paid license, as applicable. After you submit the form, you are redirected to a page where the installer and workload packages are hosted. Separate downloads are provided for **x86_64** and **aarch64**; choose the package that matches your system’s CPU architecture and Linux distribution.
 
 Linux builds are distributed as:
 - a **tar.gz** archive for both architectures
@@ -736,7 +736,7 @@ _SPECviewperf 15.0.1 Linux Edition is released with 8 official workloads with a 
 
 **How do I download the benchmark?**
 
-_Go to the `Download` tab of the [SPECviewperf 15.0.1 Linux Edition benchmark page](https://gwpg.spec.org/benchmarks/benchmark/specviewperf-15-0-1-linux-edition), complete the form for a free download or a paid license, then follow the redirect to the page that lists the packages. It is provided free for everyone except sellers of computers and related products._
+_Go to the `Download` tab of the [SPECviewperf 15.0.1 Linux Edition benchmark page](https://gwpg.spec.org/benchmarks/benchmark/specviewperf-15-linux-edition), complete the form for a free download or a paid license, then follow the redirect to the page that lists the packages. It is provided free for everyone except sellers of computers and related products._
 
 ---
 
@@ -946,9 +946,9 @@ _See if your question or issue is answered by this user guide or documented in t
 
 1. [Standard Performance Evaluation Corporation (SPEC)](https://www.spec.org/)
 2. [SPEC Graphics & Workstation Performance Group (SPECgwpg)](https://gwpg.spec.org/)
-3. [SPECviewperf 15.0.1 Linux Edition](https://gwpg.spec.org/benchmarks/benchmark/specviewperf-15-0-1-linux-edition)
+3. [SPECviewperf 15.0.1 Linux Edition](https://gwpg.spec.org/benchmarks/benchmark/specviewperf-15-linux-edition)
 4. [Official SPECviewperf Results](https://gwpg.spec.org/SPECviewperf-results/)
-5. [Reference Images](./Reference-Images/)
+5. [Reference Images](https://github.com/SPEC-GWPG-Dev/SPECgwpg-Docs/tree/main/SPECviewperf15%20Linux%20Edition/Reference-Images)
 
 ## Acknowledgements and Credits
 

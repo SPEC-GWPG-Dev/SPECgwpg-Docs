@@ -61,7 +61,7 @@ The SPECviewperf® 15 benchmark, developed by the SPEC® Graphics & Workstation 
 - *solidworks-08*: derived from Dassault Systèmes' Solidworks 2024 using OpenGL
 - *unreal_engine-01*: built on Unreal Engine 5.4.2 using DirectX 12 with raytracing
 
-For more information, see [benchmark page](https://gwpg.spec.org/benchmarks/benchmark/specviewperf-15_0).
+For more information, see [benchmark page](https://gwpg.spec.org/benchmarks/benchmark/specviewperf-15_0_1).
 
 ## System Requirements
 
@@ -113,7 +113,7 @@ Some workloads test features that require special hardware and driver support. I
 ## Installation Guide
 
 ### Downloading SPECviewperf
-The SPECviewperf 15 benchmark can be downloaded from the `Download` tab of the [SPECviewperf15 benchmark page](https://gwpg.spec.org/benchmarks/benchmark/specviewperf-15_0). It is free to download for everyone except sellers of computers and related products. A paid license is required for any for-profit entity that sells computers or computer related products in the commercial marketplace, with the exception of [SPECgwpg member companies](https://gwpg.spec.org/membership/).
+The SPECviewperf 15 benchmark can be downloaded from the `Download` tab of the [SPECviewperf15 benchmark page](https://gwpg.spec.org/benchmarks/benchmark/specviewperf-15_0_1). It is free to download for everyone except sellers of computers and related products. A paid license is required for any for-profit entity that sells computers or computer related products in the commercial marketplace, with the exception of [SPECgwpg member companies](https://gwpg.spec.org/membership/).
 
 ### Step-by-Step Installation Instructions
 1. Once you have downloaded the installation package for SPECviewperf 15, run the installer. It will give you an option of where to install the benchmark - the default install location is "C:\Program Files\SPECviewperf 15".
@@ -522,7 +522,7 @@ Windows 10 may run but is not officially supported. The following issues are kno
 - *medical-04*
   - The 'BeatingHeart' tests may produce non-deterministic screen grabs.
 - *unreal-engine-01*
-  - The City Sample project may experience extended loading times when first opened, introducing risk of the benchmark starting before all resources are fully loaded. To mitigate this issue, the workload waits for 60 seconds after opening the project before starting measurements. It is also recommended to review the generated screenshots [(Screenshots for reference)](./Reference-Images/), to ensure all resources were loaded.
+  - The City Sample project may experience extended loading times when first opened, introducing risk of the benchmark starting before all resources are fully loaded. To mitigate this issue, the workload waits for 60 seconds after opening the project before starting measurements. It is also recommended to review the generated screenshots [(Screenshots for reference)](https://github.com/SPEC-GWPG-Dev/SPECgwpg-Docs/tree/main/SPECviewperf15/Reference-Images), to ensure all resources were loaded.
   - [Distance Fields](https://dev.epicgames.com/documentation/en-us/unreal-engine/mesh-distance-fields-in-unreal-engine) are disabled by default for integrated graphics on UE 5.4. We have applied a patch from UE 5.5 that enables them for newer iGPUs.
 
 
@@ -726,7 +726,7 @@ _See if your question or issue is answered by this user guide or documented in t
 1. [Standard Performance Evaluation Corporation (SPEC)](https://www.spec.org/)
 2. [SPEC Graphics & Workstation Performance Group (SPECgwpg)](https://gwpg.spec.org/)
 3. [Official SPECviewperf Results](https://gwpg.spec.org/SPECviewperf-results/)
-4. [Reference Images](./Reference-Images/)
+4. [Reference Images](https://github.com/SPEC-GWPG-Dev/SPECgwpg-Docs/tree/main/SPECviewperf15/Reference-Images)
 
 ## Acknowledgements and Credits
 
